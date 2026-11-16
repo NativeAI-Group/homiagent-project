@@ -88,15 +88,16 @@ const translations = {
     "Close details"
   ],
   "abilities.title": ["核心能力", "Core capabilities"],
-  "abilities.one.title": [
-    "示教学习",
-    "Demonstration Learning"
-  ],
-  "abilities.two.title": [
+  "abilities.generalization.title": ["泛化性", "Generalization"],
+  "abilities.generalization.subtitle": ["能否适应不同的家庭、物体与任务？", "Can robots adapt to different homes, objects, and tasks?"],
+  "abilities.generalization.steps": ["不同家庭 · 不同物体 · 不同任务", "New homes · New objects · New tasks"],
+  "abilities.generalization.diagram": ["概念示意：同一个机器人连接布局与物体不同的三个家庭，表示跨场景适应的探索方向。", "Concept diagram: one robot connects to three homes with different layouts and objects, illustrating the goal of adapting across settings."],
+  "abilities.teachability.title": ["可培育", "Teachability"],
+  "abilities.evolution.title": [
     "自进化",
     "Self-Evolution"
   ],
-  "abilities.three.title": [
+  "abilities.proactivity.title": [
     "主动性",
     "Proactivity"
   ],
@@ -124,18 +125,9 @@ const translations = {
     "回到顶部",
     "Back to top"
   ],
-  "abilities.one.subtitle": [
-    "如何从人的示范中学习？",
-    "How can robots learn from people?"
-  ],
-  "abilities.two.subtitle": [
-    "如何从执行经验中改进？",
-    "How can experience improve execution?"
-  ],
-  "abilities.three.subtitle": [
-    "何时应该主动提供帮助？",
-    "When should a robot offer help?"
-  ],
+  "abilities.teachability.subtitle": ["能否通过人的示范、指导与纠正学会新技能？", "Can robots learn through demonstration, guidance, and correction?"],
+  "abilities.evolution.subtitle": ["能否从执行经验与反馈中持续改进？", "Can robots improve through experience and feedback?"],
+  "abilities.proactivity.subtitle": ["能否结合情境与记忆，判断何时、如何提供帮助？", "Can robots use context and memory to decide when and how to help?"],
   "highlights.one.title": [
     "RoBIOS：插件式的具身原生Harness架构",
     "RoBIOS: A Plugin-Based, Embodied-Native Harness Architecture"
@@ -168,27 +160,21 @@ const translations = {
     "HomiAgent — 面向真实家庭的开源具身 Agent",
     "HomiAgent — Open-source embodied agents for real homes"
   ],
-  "abilities.one.steps": [
-    "人的示范 → 机器人观察 → 尝试执行",
-    "Demonstrate → Observe → Try"
-  ],
-  "abilities.two.steps": [
+  "abilities.teachability.steps": ["示范 → 指导 → 纠正", "Demonstrate → Guide → Correct"],
+  "abilities.evolution.steps": [
     "尝试执行 → 获得反馈 → 调整策略",
     "Try → Get feedback → Adapt"
   ],
-  "abilities.three.steps": [
+  "abilities.proactivity.steps": [
     "观察情境 + 长期记忆 → 判断是否帮助",
     "Context + Memory → Decide whether to help"
   ],
-  "abilities.one.diagram": [
-    "过程示意：人示范移动杯子，机器人观察同样的动作并尝试执行。",
-    "Concept diagram: a person demonstrates moving a cup, and a robot observes and tries the same action."
-  ],
-  "abilities.two.diagram": [
+  "abilities.teachability.diagram": ["过程示意：人示范移动杯子，机器人尝试执行，双向反馈与指导标记表示持续的指导和纠正。", "Concept diagram: a person demonstrates moving a cup and a robot tries the action; a return loop and guidance bubble represent ongoing guidance and correction."],
+  "abilities.evolution.diagram": [
     "过程示意：机器人尝试的路线遇到障碍，根据反馈调整路线，绕开障碍继续探索。",
     "Concept diagram: a robot encounters an obstacle, uses feedback, and adjusts its route around it."
   ],
-  "abilities.three.diagram": [
+  "abilities.proactivity.diagram": [
     "过程示意：机器人结合当前情境与长期记忆，判断是否主动提供帮助；问号表示待判断的行动。",
     "Concept diagram: a robot combines current context and long-term memory to decide whether to offer help; a question mark represents the decision."
   ]

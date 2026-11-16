@@ -133,19 +133,19 @@ html[lang=en] .belief-card h3{min-height:0}
 }
 
 /* Pale sage surfaces and near-white cards reserve orange for small action cues. */
-.capability-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.capability-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .capability-card,.capability-card:last-child{display:flex;flex-direction:column;min-width:0;padding:0;margin:0;border:1px solid #d7e0ce;border-radius:9px;background:#fbfcf8;overflow:hidden}
 .exploration-art{display:flex;flex-direction:column;justify-content:center;margin:0;padding:14px 12px 17px;background:#e5eddc;border-bottom:1px solid #d7e0ce}
 .exploration-art img{display:block;width:100%;height:auto;max-width:360px;margin-inline:auto}
-.exploration-art figcaption{font-size:11px;line-height:1.8;font-weight:500;color:#53664b;text-align:center;margin-top:4px}
+.exploration-art figcaption{display:flex;align-items:center;justify-content:center;min-height:36px;font-size:11px;line-height:1.8;font-weight:500;color:#53664b;text-align:center;margin-top:4px}
 .exploration-copy{padding:25px 25px 27px}
 .exploration-copy h3,html[lang=en] .exploration-copy h3{font-size:clamp(22px,2vw,27px);line-height:1.4;margin:0 0 12px;letter-spacing:-.5px}
 .exploration-copy .capability-subtitle{font-size:13px;margin-bottom:13px;line-height:1.8}
 .exploration-copy>p:not(.capability-subtitle){font-size:12px;line-height:2;max-width:none;color:#63715c;margin:0}
-@media(min-width:701px) and (max-width:1100px){
-  .capability-grid{gap:14px}
+@media(min-width:701px) and (max-width:1199px){
+  .capability-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
   .exploration-art{padding:12px 5px 14px}
-  .exploration-art figcaption{font-size:9px;min-height:33px;display:flex;align-items:center;justify-content:center;padding-inline:9px}
+  .exploration-art figcaption{font-size:11px;padding-inline:9px}
   .exploration-copy{padding:21px 18px 24px}
   .exploration-copy h3,html[lang=en] .exploration-copy h3{font-size:22px}
   .exploration-copy .capability-subtitle{font-size:12px}
@@ -153,7 +153,7 @@ html[lang=en] .belief-card h3{min-height:0}
 @media(max-width:700px){
   .capability-grid{grid-template-columns:minmax(0,1fr);gap:23px}
   .exploration-art{padding:12px 12px 17px}
-  .exploration-art figcaption{font-size:11px}
+  .exploration-art figcaption{font-size:11px;min-height:0}
   .exploration-copy{padding:23px 24px 25px}
   .exploration-copy h3,html[lang=en] .exploration-copy h3{font-size:24px;margin:0 0 11px}
   .exploration-copy .capability-subtitle{font-size:13px;margin-bottom:12px}
