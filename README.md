@@ -2,7 +2,9 @@
 
 A responsive, bilingual website for HomiAgent: an open-source embodied Agent project for real homes, built together with developers.
 
-**Website:** [nativeai-group.github.io/HomiAgent-website](https://nativeai-group.github.io/HomiAgent-website/)
+**Repository:** [NativeAI-Group/homiagent-project](https://github.com/NativeAI-Group/homiagent-project)
+
+**Website:** [nativeai-group.github.io/homiagent-project](https://nativeai-group.github.io/homiagent-project/)
 
 ## Requirements
 
@@ -17,7 +19,9 @@ If you use nvm, run `nvm install` and `nvm use` from the repository root.
 ├── .github/workflows/
 │   └── deploy-pages.yml  # Build and publish to GitHub Pages
 ├── src/                  # Website source; copied to dist/ during builds
-│   ├── index.html        # Content and semantic page structure
+│   ├── index.html        # Homepage: introduction, beliefs, and community
+│   ├── homiagent-0.html  # Prototype: architecture, modules, and capabilities
+│   ├── research.html     # Research: technical blog
 │   ├── styles.css        # Responsive layout, colors, and motion
 │   ├── app.js            # Translations, navigation, and dialogs
 │   └── assets/           # SVG illustrations and favicon
@@ -59,7 +63,7 @@ The build clears the previous `dist/` and copies the complete `src/` directory i
 npm run preview -- --port 4173
 ```
 
-Asset paths are relative so the website works under the GitHub Pages project path `/HomiAgent-website/`.
+Asset paths are relative so the website works under the GitHub Pages project path `/homiagent-project/`.
 
 ## Deploy to GitHub Pages
 
@@ -73,8 +77,8 @@ The workflow reads its Node.js version from `.nvmrc`. It does not need third-par
 
 The default language is English; the initial HTML is also in English. Chinese/English preference is saved locally when browser storage is available. Both languages include page metadata, illustration descriptions, and process captions.
 
-The page follows this order: project introduction, project beliefs, architecture and module overviews, open exploration directions, technical articles, and contribution paths.
+The homepage contains the project introduction, the existing “What we believe” section, and a community invitation. No new vision section is included. The main navigation links to HomiAgent-0 (the current technical prototype, with separate sections for project architecture, core modules, and core capabilities) and Research (the technical blog, with All, Harness, and Memory category tabs). Each page has its own bilingual metadata; language preference is shared across pages. All three HTML pages work without client-side routing and retain readable content without JavaScript.
 
-Illustrations are local SVG files. Google Fonts are optional, with system-font fallbacks. The exploration section uses a pale sage palette with small orange accents. Its diagrams illustrate demonstration learning, feedback-driven adaptation, and context-and-memory-based decisions as open research directions.
+Illustrations are local SVG files. Google Fonts are optional, with system-font fallbacks. The architecture diagram shows RoBIOS coordinating HomiBrain, HomiMemo, and robot execution, with labeled information flows and a feedback return path. The core capabilities section uses a pale sage palette with small orange accents. Its diagrams illustrate demonstration learning, feedback-driven adaptation, and context-and-memory-based decisions as open research directions.
 
-GitHub entry points link to the NativeAI-Group organization. Module documentation buttons are disabled and labeled “Coming soon”; replace them with documentation links when ready.
+GitHub entry points link to the NativeAI-Group organization. Research entries show a category, cover, title, and summary. Category tabs filter the existing notes and support arrow keys, Home, and End; the current filter is retained when switching languages. Module overviews provide additional details. Documentation links will be added when documentation is available.

@@ -1,16 +1,20 @@
 const translations = {
-  "nav.tech": [
-    "项目架构",
-    "Architecture"
+  "nav.research": ["研究", "Research"],
+  "prototype.description": [
+    "面向真实家庭的具身智能技术原型。",
+    "Our technical prototype for embodied AI in real homes."
   ],
-  "nav.capabilities": [
-    "探索方向",
-    "Exploration"
+  "prototype.metaTitle": ["HomiAgent-0 — 技术原型 | HomiAgent", "HomiAgent-0 — Technical prototype | HomiAgent"],
+  "research.description": [
+    "构建 HomiAgent 过程中的技术记录与思考。",
+    "Technical notes on building HomiAgent."
   ],
-  "nav.highlights": [
-    "技术博客",
-    "Tech Blog"
-  ],
+  "research.metaTitle": ["研究 — 技术博客 | HomiAgent", "Research — Tech Blog | HomiAgent"],
+  "research.all": ["全部", "All"],
+  "research.harness": ["框架", "Harness"],
+  "research.memory": ["记忆", "Memory"],
+  "research.categories": ["研究分类", "Research categories"],
+  "research.results": ["显示 {count} 篇研究记录。", "Research notes shown: {count}."],
   "hero.subtitle": [
     "面向真实家庭的开源具身 Agent",
     "Open-source embodied agents for real homes."
@@ -20,32 +24,20 @@ const translations = {
     "An open-source embodied Agent project for real homes, built together with developers."
   ],
   "hero.explore": [
-    "访问 GitHub 组织",
-    "Visit GitHub organization"
+    "在 GitHub 查看",
+    "View on GitHub"
   ],
   "hero.more": [
-    "探索项目架构",
-    "Explore the architecture"
-  ],
-  "hero.footnote": [
-    "框架 · 模型 · 记忆，与社区一起构建",
-    "Harness · Models · Memory. Built together."
+    "探索 HomiAgent-0",
+    "Explore HomiAgent-0"
   ],
   "scene.title": [
     "A Robot Like Homi.",
     "A Robot Like Homi."
   ],
-  "scene.subtitle": [
-    "我们的愿景：让机器人融入真实家庭",
-    "Our vision: robots at home, with us."
-  ],
-  "strip.intro": [
-    "一起构建 HomiAgent",
-    "Build HomiAgent together"
-  ],
   "beliefs.title": [
-    "为什么这样构建",
-    "Why we build this way"
+    "我们相信什么",
+    "What we believe"
   ],
   "beliefs.one.title": [
     "具身原生",
@@ -75,61 +67,17 @@ const translations = {
     "项目架构",
     "Project architecture"
   ],
-  "tech.one.category": [
-    "HARNESS / 执行框架",
-    "HARNESS / EXECUTION"
-  ],
-  "tech.one.title": [
-    "感知、决策与执行的运行框架",
-    "The harness for embodied execution"
-  ],
   "tech.one.body": [
     "以极简内核与插件架构组织实时执行，连接模型、记忆与机器人。",
     "Organize real-time execution through a minimal core and plugins, connecting models, memory, and the robot."
-  ],
-  "tech.one.tag1": [
-    "实时闭环",
-    "Real-time loop"
-  ],
-  "tech.one.tag2": [
-    "极简内核",
-    "Minimal core"
-  ],
-  "tech.one.tag3": [
-    "插件扩展",
-    "Plugins"
-  ],
-  "tech.two.category": [
-    "MEMORY / 长期记忆",
-    "MEMORY / LONG-TERM MEMORY"
-  ],
-  "tech.two.title": [
-    "用户、环境与经历的长期记忆",
-    "Memory of people, places, and experience"
   ],
   "tech.two.body": [
     "通过 UPM、WSM 与 RAM 组织用户画像、世界状态与机器人经历，为长期交互提供上下文。",
     "Organize user profiles, world states, and robot experiences through UPM, WSM, and RAM to provide context across interactions."
   ],
-  "tech.three.category": [
-    "MODEL / 模型协同",
-    "MODEL / COORDINATION"
-  ],
-  "tech.three.title": [
-    "高层理解与底层动作的模型协同",
-    "From understanding to action"
-  ],
   "tech.three.body": [
     "连接 RoboBrain 的高层理解与决策，以及 RoboGAM 的动作生成与闭环执行。",
     "Connect high-level understanding and decisions in RoboBrain with action generation and closed-loop execution in RoboGAM."
-  ],
-  "tech.three.tag3": [
-    "协同执行",
-    "Coordination"
-  ],
-  "tech.note": [
-    "各模块文档正在整理，入口已预留。你可以先阅读模块介绍，了解设计思路。",
-    "Module documentation is being prepared. Start with the module overviews to explore the design."
   ],
   "common.discover": [
     "模块介绍",
@@ -139,77 +87,42 @@ const translations = {
     "关闭详情",
     "Close details"
   ],
-  "abilities.title": [
-    "开源探索方向",
-    "Directions to explore together"
-  ],
+  "abilities.title": ["核心能力", "Core capabilities"],
   "abilities.one.title": [
     "示教学习",
     "Demonstration Learning"
-  ],
-  "abilities.one.body": [
-    "探索如何让机器人从人的示范中学习新任务，并适应不同的家庭场景。",
-    "Explore how robots can learn new tasks from human demonstrations and adapt them to different homes."
   ],
   "abilities.two.title": [
     "自进化",
     "Self-Evolution"
   ],
-  "abilities.two.body": [
-    "探索如何利用执行反馈与历史经验，持续改进任务策略。",
-    "Explore how execution feedback and past experience can inform better task strategies over time."
-  ],
   "abilities.three.title": [
     "主动性",
     "Proactivity"
   ],
-  "abilities.three.body": [
-    "探索如何结合家庭状态与长期记忆，判断何时、以何种方式提供帮助。",
-    "Explore how home state and long-term memory can inform when and how a robot should offer help."
-  ],
-  "highlights.title": [
-    "技术博客",
-    "Tech Blog"
-  ],
   "highlights.one": [
-    "感知、决策与执行如何形成闭环",
-    "Connecting perception, reasoning, and action"
-  ],
-  "highlights.one.tag": [
-    "实时闭环 · 插件扩展",
-    "Real-time execution · Plugins"
+    "以极简内核、插件机制与实时反馈，连接家庭机器人的感知、决策和执行。",
+    "How a minimal core, plugins, and real-time feedback connect perception, reasoning, and execution for robots in the home."
   ],
   "highlights.two": [
-    "用户、环境与经历，如何构成长期记忆",
-    "Remembering people, spaces, and experiences"
-  ],
-  "highlights.two.tag": [
-    "UPM · WSM · RAM",
-    "UPM · WSM · RAM"
+    "通过用户画像、世界状态与机器人经历，构建支持长期个性化服务的三层记忆。",
+    "How user profiles, world states, and robot experiences form a memory foundation for long-term personalized assistance."
   ],
   "community.title": [
     "一起构建<br><span class=\"serif\">HomiAgent。</span>",
     "Build HomiAgent.<br><span class=\"serif\">Together.</span>"
   ],
   "community.body": [
-    "从一个问题、一次实验或一个插件开始，和开发者、研究者一起探索家庭具身智能。",
-    "Start with a question, an experiment, or a plugin. Explore embodied AI for the home with developers and researchers."
+    "分享家庭场景与实验，贡献插件，或一起适配更多机器人。",
+    "Share home use cases and experiments, contribute plugins, or help connect more robots."
   ],
   "community.button": [
-    "访问 GitHub 组织",
-    "Visit GitHub organization"
-  ],
-  "footer.tagline": [
-    "面向真实家庭，与开发者共同构建。",
-    "For real homes. Built with developers."
+    "在 GitHub 参与",
+    "Join on GitHub"
   ],
   "footer.top": [
     "回到顶部",
     "Back to top"
-  ],
-  "footer.mission": [
-    "开源具身 Agent · 与社区一起探索",
-    "Open-source embodied agents · Explore together"
   ],
   "abilities.one.subtitle": [
     "如何从人的示范中学习？",
@@ -228,96 +141,28 @@ const translations = {
     "RoBIOS: A Plugin-Based, Embodied-Native Harness Architecture"
   ],
   "highlights.two.title": [
-    "HomiMem：家庭机器人的三层记忆",
-    "HomiMem: Three Layers of Memory"
+    "HomiMemo：面向家庭机器人终身个性化服务的记忆",
+    "HomiMemo: A Memory for Lifelong Personalized Household Robots"
   ],
-  "nav.community": [
-    "参与共建",
-    "Contribute"
-  ],
-  "strip.embodied": [
-    "具身原生",
-    "Embodied by design"
-  ],
-  "strip.open": [
-    "开放共建",
-    "Open collaboration"
-  ],
-  "strip.homes": [
-    "真实家庭",
-    "Real homes"
-  ],
-  "tech.intro": [
-    "框架、模型与记忆协同，连接真实家庭中的感知、决策与执行。",
-    "A harness, models, and memory work together to connect perception, reasoning, and action in real homes."
-  ],
-  "common.docs": [
-    "文档 · 整理中",
-    "Docs · Coming soon"
-  ],
-  "architecture.label": [
-    "系统协同关系",
-    "HOW THE SYSTEM CONNECTS"
-  ],
-  "architecture.home": [
-    "真实家庭",
-    "Real home"
-  ],
-  "architecture.loop": [
-    "感知 → 决策 → 执行 → 环境反馈",
-    "Perception → Reasoning → Action → Feedback"
-  ],
-  "architecture.model": [
-    "理解任务 · 生成动作",
-    "Understand tasks · Generate actions"
-  ],
-  "architecture.harness": [
-    "组织实时执行 · 连接各模块",
-    "Orchestrate execution · Connect modules"
-  ],
-  "architecture.memory": [
-    "用户画像 · 世界状态 · 执行经历",
-    "User profiles · World states · Experience"
-  ],
-  "architecture.feedback": [
-    "在环境中执行，让新的观察与经历进入下一轮交互。",
-    "Act in the environment. Bring new observations and experiences into the next interaction."
-  ],
-  "abilities.intro": [
-    "我们希望与社区共同推进的研究与工程方向，欢迎一起提出问题、开展实验和验证想法。",
-    "Research and engineering directions we want to explore with the community. Bring questions, experiments, and ideas to test."
-  ],
-  "abilities.note": [
-    "这些是开放的探索方向，欢迎参与讨论与验证。",
-    "These are open questions to investigate, discuss, and validate together."
-  ],
+  "tech.intro": ["RoBIOS 协调模型推理、记忆与机器人执行，形成持续的反馈闭环。", "RoBIOS coordinates model reasoning, memory, and robot execution in a continuous feedback loop."],
+  "modules.title": ["主要模块", "Core modules"],
+  "architecture.home": ["真实家庭", "Real home"],
+  "architecture.homeBody": ["用户任务与环境", "People, tasks & surroundings"],
+  "architecture.input": ["任务与观察", "Tasks + observations"],
+  "architecture.harness": ["协调模型、记忆与执行", "Coordinate models, memory & execution"],
+  "architecture.modelRole": ["理解与动作生成", "Reasoning & action generation"],
+  "architecture.memoryRole": ["长期上下文", "Long-term context"],
+  "architecture.context": ["读取上下文", "Read context"],
+  "architecture.experience": ["写入经历", "Write experience"],
+  "architecture.output": ["执行指令", "Actions"],
+  "architecture.robot": ["机器人执行", "Robot execution"],
+  "architecture.robotBody": ["在物理世界中行动", "Act in the physical world"],
+  "architecture.feedback": ["新观察与执行反馈", "New observations + execution feedback"],
+  "architecture.description": ["任务与观察进入 RoBIOS，由其协调 HomiBrain 进行理解与动作生成，并通过 HomiMemo 读取上下文、记录经历。机器人在家庭中执行动作，新的观察与执行反馈进入下一轮。", "Tasks and observations enter RoBIOS, which coordinates HomiBrain for reasoning and action generation and HomiMemo for context and experience. The robot acts in the home; new observations and execution feedback return to the next cycle."],
+  "abilities.intro": ["希望与社区共同探索和验证的能力方向。", "Capability directions to explore and validate with the community."],
   "abilities.contribute": [
     "参与探索",
     "Join the exploration"
-  ],
-  "community.one.title": [
-    "了解项目与代码",
-    "Explore the project"
-  ],
-  "community.one.body": [
-    "关注代码与项目进展，从你熟悉的框架、模型或记忆模块开始。",
-    "Follow code and project updates. Start with the harness, models, or memory—wherever your experience fits."
-  ],
-  "community.two.title": [
-    "分享问题与实验",
-    "Share questions and experiments"
-  ],
-  "community.two.body": [
-    "带来真实家庭中的需求、实验观察与反馈，一起讨论和验证设计。",
-    "Bring household use cases, observations, and feedback to help discuss and test the design."
-  ],
-  "community.three.title": [
-    "探索插件与适配",
-    "Explore plugins and integrations"
-  ],
-  "community.three.body": [
-    "围绕插件扩展与机器人适配，探索让系统连接更多设备与场景。",
-    "Explore plugins and robot integrations to connect the system to more devices and home environments."
   ],
   "meta.title": [
     "HomiAgent — 面向真实家庭的开源具身 Agent",
@@ -360,8 +205,8 @@ const details = {
       [['插件扩展', 'Plugins'], ['通过插件支持不同机器人与家庭场景。', 'Support different robots and household tasks through plugins.']],
     ],
   },
-  homimem: {
-    category: 'THE MEMORY / HomiMem',
+  homimemo: {
+    category: 'THE MEMORY / HomiMemo',
     subtitle: ['家庭机器人记忆模块', 'Memory for home robots'],
     description: ['整合三层记忆，为家庭机器人提供长期个性化服务。', 'Combine three memory layers to support long-term personalized assistance.'],
     points: [
@@ -370,8 +215,8 @@ const details = {
       [['RAM · 机器人自传体记忆', 'RAM · Robot Autobiographical Memory'], ['保存历史交互与执行经验。', 'Retain past interactions and execution experience.']],
     ],
   },
-  homimodel: {
-    category: 'THE MODEL / HomiModel',
+  homibrain: {
+    category: 'THE MODEL / HomiBrain',
     subtitle: ['大脑 + 小脑', 'Brain + cerebellum'],
     description: ['RoboBrain 与 RoboGAM 协同，连接高层决策与底层动作执行。', 'RoboBrain and RoboGAM connect high-level decisions with low-level action execution.'],
     points: [
@@ -394,11 +239,11 @@ const articles = {
       [['通过插件扩展应用', 'Extend applications through plugins'], ['不同机器人与家庭任务需要不同能力。插件架构让这些能力围绕内核扩展，为具身 Agent 的应用生态留出空间。', 'Different robots and household tasks need different capabilities. Plugins extend the core to support these needs and make room for an embodied Agent application ecosystem.']],
     ],
   },
-  'blog-homimem': {
+  'blog-homimemo': {
     category: 'TECH BLOG / MEMORY',
-    title: ['HomiMem：家庭机器人的三层记忆', 'HomiMem: Three Layers of Memory'],
+    title: ['HomiMemo：面向家庭机器人终身个性化服务的记忆', 'HomiMemo: A Memory for Lifelong Personalized Household Robots'],
     subtitle: ['用户、环境与经历，如何构成长期记忆', 'Remembering people, spaces, and experiences'],
-    description: ['家庭机器人的长期服务需要理解用户、环境与过去的经历。HomiMem 将这三类信息组织为 UPM、WSM 与 RAM，作为个性化服务的记忆基础。', 'Long-term assistance at home requires knowledge of people, the environment, and past experiences. HomiMem organizes these into UPM, WSM, and RAM as a memory foundation for personalization.'],
+    description: ['家庭机器人的长期服务需要理解用户、环境与过去的经历。HomiMemo 将这三类信息组织为 UPM、WSM 与 RAM，作为个性化服务的记忆基础。', 'Long-term assistance at home requires knowledge of people, the environment, and past experiences. HomiMemo organizes these into UPM, WSM, and RAM as a memory foundation for personalization.'],
     points: [
       [['UPM：关于用户的记忆', 'UPM: Memory of people'], ['用户画像记忆记录偏好、习惯与个性化需求，帮助机器人理解不同家庭成员的服务需要。', 'User Profile Memory records preferences, habits, and personal needs, helping a robot understand the assistance each household member needs.']],
       [['WSM：关于环境的记忆', 'WSM: Memory of the environment'], ['世界状态记忆记录家庭空间与物品状态，为理解当前情境与判断后续行动提供依据。', 'World State Memory records household spaces and object states, informing an understanding of the current situation and subsequent actions.']],
@@ -413,6 +258,43 @@ const languageButton = document.querySelector('.language-toggle');
 const menuButton = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
 const dialog = document.querySelector('#detail-dialog');
+const page = document.body.dataset.page || 'home';
+const researchFilters = document.querySelector('.research-filters');
+const researchTabs = [...document.querySelectorAll('[data-research-filter]')];
+const researchEntries = [...document.querySelectorAll('[data-research-category]')];
+
+function updateResearchStatus() {
+  if (!researchFilters) return;
+  const index = lang === 'zh' ? 0 : 1;
+  researchFilters.setAttribute('aria-label', translations['research.categories'][index]);
+  document.querySelector('#research-status').textContent = translations['research.results'][index].replace('{count}', researchEntries.filter(entry => !entry.hidden).length);
+}
+
+function selectResearchCategory(tab, moveFocus = false) {
+  const category = tab.dataset.researchFilter;
+  researchTabs.forEach(button => {
+    const selected = button === tab;
+    button.setAttribute('aria-selected', String(selected));
+    button.tabIndex = selected ? 0 : -1;
+  });
+  researchEntries.forEach(entry => { entry.hidden = category !== 'all' && entry.dataset.researchCategory !== category; });
+  document.querySelector('#research-results').setAttribute('aria-labelledby', tab.id);
+  updateResearchStatus();
+  if (moveFocus) tab.focus();
+}
+
+researchTabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => selectResearchCategory(tab));
+  tab.addEventListener('keydown', event => {
+    const targets = { ArrowRight: (index + 1) % researchTabs.length, ArrowLeft: (index + researchTabs.length - 1) % researchTabs.length, Home: 0, End: researchTabs.length - 1 };
+    if (Object.hasOwn(targets, event.key)) {
+      event.preventDefault();
+      selectResearchCategory(researchTabs[targets[event.key]], true);
+    }
+  });
+});
+if (researchFilters) researchFilters.hidden = false;
+
 let lastDetailButton = null;
 let activeDetail = null;
 
@@ -429,21 +311,21 @@ function applyLanguage() {
   document.querySelectorAll('.feature-card').forEach(card => {
     const moduleName = card.querySelector('h3').firstChild.textContent;
     card.querySelector('.feature-link').setAttribute('aria-label', `${moduleName} · ${translations['common.discover'][index]}`);
-    card.querySelector('.docs-placeholder').setAttribute('aria-label', `${moduleName} · ${translations['common.docs'][index]}`);
   });
   document.querySelector('.lang-zh').classList.toggle('active', lang === 'zh');
   document.querySelector('.lang-en').classList.toggle('active', lang === 'en');
   languageButton.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : '切换为中文');
   document.querySelector('.dialog-close').setAttribute('aria-label', lang === 'zh' ? '关闭详情' : 'Close details');
-  document.querySelector('.home-scene').alt = lang === 'zh' ? '家庭机器人愿景插画：机器人在有沙发、绿植和咖啡的温暖客厅中' : 'An illustration of our home robot vision: a robot in a warm living room with a sofa, plants, and coffee';
+  const homeScene = document.querySelector('.home-scene');
+  if (homeScene) homeScene.alt = lang === 'zh' ? '家庭机器人愿景插画：机器人在有沙发、绿植和咖啡的温暖客厅中' : 'An illustration of our home robot vision: a robot in a warm living room with a sofa, plants, and coffee';
   document.querySelectorAll('.brand').forEach(element => element.setAttribute('aria-label', lang === 'zh' ? 'HomiAgent 首页' : 'HomiAgent home'));
-  document.querySelector('.github-button').title = lang === 'zh' ? '访问 NativeAI-Group 的 GitHub 主页' : 'NativeAI-Group on GitHub';
-  document.title = translations['meta.title'][index];
-  const description = translations['hero.description'][index];
+  document.title = translations[page === 'home' ? 'meta.title' : `${page}.metaTitle`][index];
+  const description = translations[page === 'home' ? 'hero.description' : `${page}.description`][index];
   document.querySelector('meta[name="description"]').content = description;
   document.querySelector('meta[property="og:title"]').content = document.title;
   document.querySelector('meta[property="og:description"]').content = description;
   updateMenuLabel();
+  updateResearchStatus();
   if (activeDetail) fillDialog(activeDetail);
 }
 
@@ -482,7 +364,7 @@ function fillDialog(name) {
   const index = lang === 'zh' ? 0 : 1;
   document.querySelector('#dialog-category').textContent = detail.category;
   dialog.classList.toggle('article-dialog', Boolean(articles[name]));
-  document.querySelector('#dialog-title').textContent = detail.title?.[index] || { robios: 'RoBIOS', homimem: 'HomiMem', homimodel: 'HomiModel' }[name];
+  document.querySelector('#dialog-title').textContent = detail.title?.[index] || { robios: 'RoBIOS', homimemo: 'HomiMemo', homibrain: 'HomiBrain' }[name];
   document.querySelector('#dialog-subtitle').textContent = detail.subtitle[index];
   document.querySelector('#dialog-description').textContent = detail.description[index];
   const points = document.querySelector('#dialog-points');
@@ -531,18 +413,6 @@ if ('IntersectionObserver' in window) {
     document.documentElement.classList.add('js-motion');
     document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
   }
-  const navObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        document.querySelectorAll('.desktop-nav a').forEach(link => {
-          const active = link.hash === `#${entry.target.id}`;
-          link.classList.toggle('active', active);
-          if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current');
-        });
-      }
-    });
-  }, { rootMargin: '-10% 0px -65% 0px', threshold: 0 });
-  document.querySelectorAll('section[id]').forEach(section => navObserver.observe(section));
 }
 
 document.querySelector('#year').textContent = String(new Date().getFullYear());

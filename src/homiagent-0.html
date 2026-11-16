@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8f2">
+  <meta name="description" content="Our technical prototype for embodied AI in real homes.">
+  <meta property="og:title" content="HomiAgent-0 — Technical prototype | HomiAgent">
+  <meta property="og:description" content="Our technical prototype for embodied AI in real homes.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>HomiAgent-0 — Technical prototype | HomiAgent</title>
+</head>
+<body data-page="prototype">
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.58 9.58 0 0 1 12 6.82c.85 0 1.71.11 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11H3Z"/><path d="M9 21v-8h6v8"/></symbol>
+    <symbol id="i-learn" viewBox="0 0 40 40"><path d="M13 20V9a3 3 0 0 1 6 0v10-3a3 3 0 0 1 6 0v4-2a3 3 0 0 1 6 0v7c0 7-4 11-11 11-4 0-6-2-9-6l-5-7a3 3 0 0 1 5-3l4 5"/><path d="M3 8 6 5m20 0 3 3M16 1v2"/></symbol>
+    <symbol id="i-grow" viewBox="0 0 40 40"><path d="M9 13a14 14 0 0 1 24 2m-2 12A14 14 0 0 1 7 25"/><path d="m27 15 7 1 1-7M13 25l-7-1-1 7M15 22l4 4 7-10"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 40 40"><path d="m21 3 3.5 12.5L37 19l-12.5 3.5L21 35l-3.5-12.5L5 19l12.5-3.5ZM7 3v6M4 6h6m23 24v7m-3.5-3.5h7"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="HomiAgent home">
+        <span class="brand-mark"><svg viewBox="0 0 32 32"><path d="m6 14 10-8 10 8v12H6Z"/><path d="M12 18v3m8-3v3"/></svg></span>
+        Homi<span class="brand-light">Agent</span><span class="brand-dot">.</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="homiagent-0.html" data-page-link="prototype" class="active" aria-current="page">HomiAgent-0</a>
+        <a href="research.html" data-page-link="research" data-i18n="nav.research">Research</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" aria-label="切换为中文"><span class="lang-en active">EN</span><span class="lang-divider">/</span><span class="lang-zh">中</span></button>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="homiagent-0.html" data-page-link="prototype" class="active" aria-current="page">HomiAgent-0</a>
+        <a href="research.html" data-page-link="research" data-i18n="nav.research">Research</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro container" aria-labelledby="page-title">
+      <div class="page-intro-heading"><h1 id="page-title">HomiAgent-0</h1></div>
+      <p class="page-description" data-i18n="prototype.description">Our technical prototype for embodied AI in real homes.</p>
+    </section>
+
+    <section class="architecture-section" id="technology" aria-labelledby="technology-title"><div class="container section">
+      <div class="section-heading"><div><h2 id="technology-title" data-i18n="tech.title">Project architecture</h2></div></div>
+      <p class="section-intro" data-i18n="tech.intro">RoBIOS coordinates model reasoning, memory, and robot execution in a continuous feedback loop.</p>
+      <figure class="system-diagram" aria-labelledby="technology-title" aria-describedby="architecture-description">
+        <div class="system-flow">
+          <div class="system-endpoint system-home">
+            <div class="system-endpoint-card"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg><div><strong data-i18n="architecture.home">Real home</strong><span data-i18n="architecture.homeBody">People, tasks &amp; surroundings</span></div></div>
+          </div>
+          <div class="system-flow-arrow"><span data-i18n="architecture.input">Tasks + observations</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></div>
+          <div class="system-harness">
+            <div class="system-harness-heading"><a href="#module-robios"><span class="system-harness-dot" aria-hidden="true"></span><strong>RoBIOS</strong></a><span>HARNESS</span></div>
+            <p data-i18n="architecture.harness">Coordinate models, memory &amp; execution</p>
+            <div class="system-support">
+              <a class="system-module" href="#module-homibrain"><strong>HomiBrain</strong><span data-i18n="architecture.modelRole">Reasoning &amp; action generation</span></a>
+              <div class="system-memory-exchange"><span class="memory-read" data-i18n="architecture.context">Read context</span><span class="memory-write" data-i18n="architecture.experience">Write experience</span></div>
+              <a class="system-module" href="#module-homimemo"><strong>HomiMemo</strong><span data-i18n="architecture.memoryRole">Long-term context</span></a>
+            </div>
+          </div>
+          <div class="system-flow-arrow"><span data-i18n="architecture.output">Actions</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></div>
+          <div class="system-endpoint system-robot">
+            <div class="system-endpoint-card"><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="9" width="20" height="17" rx="6"/><path d="M16 4v5m-5 7v4m10-4v4M2 15v6m28-6v6"/></svg><div><strong data-i18n="architecture.robot">Robot execution</strong><span data-i18n="architecture.robotBody">Act in the physical world</span></div></div>
+          </div>
+          <div class="system-return" aria-hidden="true"></div>
+        </div>
+        <div class="system-feedback-label"><span data-i18n="architecture.feedback">New observations + execution feedback</span></div>
+        <figcaption class="sr-only" id="architecture-description" data-i18n="architecture.description">Tasks and observations enter RoBIOS, which coordinates HomiBrain for reasoning and action generation and HomiMemo for context and experience. The robot acts in the home; new observations and execution feedback return to the next cycle.</figcaption>
+      </figure>
+    </div></section>
+
+    <section class="modules-section" id="modules" aria-labelledby="modules-title"><div class="container section">
+      <div class="section-heading"><div><h2 id="modules-title" data-i18n="modules.title">Core modules</h2></div></div>
+      <div class="feature-grid">
+        <article class="feature-card reveal" id="module-robios"><div class="feature-art robios-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="orbit-node node-see">◉ <span>Perceive</span></span><span class="orbit-node node-think">✳ <span>Reason</span></span><span class="orbit-node node-act">↗ <span>Act</span></span><div class="core-chip"><svg viewBox="0 0 32 32"><path d="m6 14 10-8 10 8v12H6Z"/><path d="M12 18v3m8-3v3"/></svg></div></div><div class="feature-content"><h3>RoBIOS</h3><p data-i18n="tech.one.body">Organize real-time execution through a minimal core and plugins, connecting models, memory, and the robot.</p><div class="module-actions"><button class="feature-link" data-detail="robios" aria-label="RoBIOS · Module overview"><span data-i18n="common.discover">Module overview</span><svg class="icon"><use href="#i-arrow"/></svg></button></div></div></article>
+        <article class="feature-card reveal" id="module-homibrain"><div class="feature-art model-art" aria-hidden="true"><div class="brain-node"><span class="brain-icon">✳</span><div><b>RoboBrain</b><span>Understand & decide</span></div><span class="model-node-dot"></span></div><div class="brain-connection"><i></i><span>↓ ↑</span><i></i></div><div class="brain-node gam-node"><span class="brain-icon">⌘</span><div><b>RoboGAM</b><span>Geometry Action Model</span></div><span class="model-node-dot"></span></div></div><div class="feature-content"><h3>HomiBrain</h3><p data-i18n="tech.three.body">Connect high-level understanding and decisions in RoboBrain with action generation and closed-loop execution in RoboGAM.</p><div class="module-actions"><button class="feature-link" data-detail="homibrain" aria-label="HomiBrain · Module overview"><span data-i18n="common.discover">Module overview</span><svg class="icon"><use href="#i-arrow"/></svg></button></div></div></article>
+        <article class="feature-card reveal" id="module-homimemo"><div class="feature-art memory-art" aria-hidden="true"><div class="memory-stack"><div class="memory-layer layer-ram"><span class="memory-mini-icon">↺</span><b>RAM</b><span>Our experiences</span><i></i></div><div class="memory-layer layer-wsm"><span class="memory-mini-icon">⌂</span><b>WSM</b><span>Your world</span><i></i></div><div class="memory-layer layer-upm"><span class="memory-mini-icon">♡</span><b>UPM</b><span>You, remembered</span><i></i></div></div></div><div class="feature-content"><h3>HomiMemo</h3><p data-i18n="tech.two.body">Organize user profiles, world states, and robot experiences through UPM, WSM, and RAM to provide context across interactions.</p><div class="module-actions"><button class="feature-link" data-detail="homimemo" aria-label="HomiMemo · Module overview"><span data-i18n="common.discover">Module overview</span><svg class="icon"><use href="#i-arrow"/></svg></button></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="capabilities-section" id="capabilities" aria-labelledby="capabilities-title"><div class="container section">
+      <div class="section-heading"><div><h2 id="capabilities-title" data-i18n="abilities.title">Core capabilities</h2></div></div>
+      <p class="section-intro" data-i18n="abilities.intro">Capability directions to explore and validate with the community.</p>
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <figure class="exploration-art">
+            <img src="assets/exploration-learning.svg" alt="Concept diagram: a person demonstrates moving a cup, and a robot observes and tries the same action." data-i18n-alt="abilities.one.diagram" width="360" height="180" loading="lazy">
+            <figcaption data-i18n="abilities.one.steps">Demonstrate → Observe → Try</figcaption>
+          </figure>
+          <div class="exploration-copy"><h3 data-i18n="abilities.one.title">Demonstration Learning</h3><p class="capability-subtitle" data-i18n="abilities.one.subtitle">How can robots learn from people?</p></div>
+        </article>
+        <article class="capability-card reveal">
+          <figure class="exploration-art">
+            <img src="assets/exploration-evolution.svg" alt="Concept diagram: a robot encounters an obstacle, uses feedback, and adjusts its route around it." data-i18n-alt="abilities.two.diagram" width="360" height="180" loading="lazy">
+            <figcaption data-i18n="abilities.two.steps">Try → Get feedback → Adapt</figcaption>
+          </figure>
+          <div class="exploration-copy"><h3 data-i18n="abilities.two.title">Self-Evolution</h3><p class="capability-subtitle" data-i18n="abilities.two.subtitle">How can experience improve execution?</p></div>
+        </article>
+        <article class="capability-card reveal">
+          <figure class="exploration-art">
+            <img src="assets/exploration-proactivity.svg" alt="Concept diagram: a robot combines current context and long-term memory to decide whether to offer help; a question mark represents the decision." data-i18n-alt="abilities.three.diagram" width="360" height="180" loading="lazy">
+            <figcaption data-i18n="abilities.three.steps">Context + Memory → Decide whether to help</figcaption>
+          </figure>
+          <div class="exploration-copy"><h3 data-i18n="abilities.three.title">Proactivity</h3><p class="capability-subtitle" data-i18n="abilities.three.subtitle">When should a robot offer help?</p></div>
+        </article>
+      </div>
+      <div class="exploration-note"><a href="index.html#community"><span data-i18n="abilities.contribute">Join the exploration</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div></section>
+
+  </main>
+
+  <footer class="container site-footer"><div class="footer-top"><a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 32 32"><path d="m6 14 10-8 10 8v12H6Z"/><path d="M12 18v3m8-3v3"/></svg></span>Homi<span class="brand-light">Agent</span><span class="brand-dot">.</span></a><a href="#" class="back-top"><span data-i18n="footer.top">Back to top</span><span>↑</span></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> HomiAgent.</span></div></footer>
+
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><button class="dialog-close" aria-label="Close details">×</button><div class="eyebrow" id="dialog-category"></div><h2 id="dialog-title"></h2><h3 id="dialog-subtitle"></h3><p id="dialog-description"></p><div id="dialog-points"></div><button class="button button-dark dialog-done" data-i18n="common.close">Close details</button></div></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
