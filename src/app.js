@@ -13,6 +13,12 @@ const translations = {
   "research.all": ["全部", "All"],
   "research.harness": ["框架", "Harness"],
   "research.memory": ["记忆", "Memory"],
+  "research.agent": ["智能体", "Agent"],
+  "research.eval": ["评测", "Eval"],
+  "research.agent.title": ["HomiAgent-0：面向家庭机器人终身个性化的记忆驱动 Agent", "HomiAgent-0: A Memory-Driven Agent for Lifelong Personalized Household Robots"],
+  "research.agent.summary": ["探索以记忆驱动家庭机器人的终身个性化与自我改进。", "A memory-driven approach to lifelong personalization and self-improvement for household robots."],
+  "research.eval.title": ["Are You Ok？重新审视大语言模型作为具身大脑的评测基准", "Are You Ok? A revisiting Benchmark for LLM as Embodied Brains"],
+  "research.eval.summary": ["重新审视如何评测大语言模型作为具身大脑的能力。", "Revisiting how large language models are evaluated as embodied brains."],
   "research.categories": ["研究分类", "Research categories"],
   "research.results": ["显示 {count} 篇研究记录。", "Research notes shown: {count}."],
   "hero.subtitle": [
@@ -214,6 +220,20 @@ const details = {
 };
 
 const articles = {
+  'blog-homiagent-0': {
+    category: 'TECH BLOG / AGENT',
+    title: translations['research.agent.title'],
+    subtitle: ['记忆驱动的家庭 Agent', 'Memory-driven household agents'],
+    description: translations['research.agent.summary'],
+    points: [],
+  },
+  'blog-are-you-ok': {
+    category: 'TECH BLOG / EVAL',
+    title: translations['research.eval.title'],
+    subtitle: ['重新审视具身评测', 'Revisiting embodied evaluation'],
+    description: translations['research.eval.summary'],
+    points: [],
+  },
   'blog-robios': {
     category: 'TECH BLOG / FRAMEWORK',
     title: ['RoBIOS：插件式的具身原生Harness架构', 'RoBIOS: A Plugin-Based, Embodied-Native Harness Architecture'],

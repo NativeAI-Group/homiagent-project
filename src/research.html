@@ -50,14 +50,23 @@
       <p class="page-description" data-i18n="research.description">Technical notes on building HomiAgent.</p>
       <div class="research-filters" role="tablist" aria-label="Research categories" hidden>
         <button type="button" role="tab" id="research-tab-all" data-research-filter="all" aria-selected="true" aria-controls="research-results" tabindex="0" data-i18n="research.all">All</button>
+        <button type="button" role="tab" id="research-tab-agent" data-research-filter="agent" aria-selected="false" aria-controls="research-results" tabindex="-1" data-i18n="research.agent">Agent</button>
         <button type="button" role="tab" id="research-tab-harness" data-research-filter="harness" aria-selected="false" aria-controls="research-results" tabindex="-1" data-i18n="research.harness">Harness</button>
         <button type="button" role="tab" id="research-tab-memory" data-research-filter="memory" aria-selected="false" aria-controls="research-results" tabindex="-1" data-i18n="research.memory">Memory</button>
+        <button type="button" role="tab" id="research-tab-eval" data-research-filter="eval" aria-selected="false" aria-controls="research-results" tabindex="-1" data-i18n="research.eval">Eval</button>
       </div>
     </section>
 
     <section class="section research-list container" id="highlights" aria-labelledby="page-title">
       <p class="sr-only" id="research-status" role="status" aria-live="polite" aria-atomic="true"></p>
       <div id="research-results" role="tabpanel" aria-labelledby="research-tab-all" tabindex="0">
+        <article class="research-entry" data-research-category="agent">
+          <div class="research-meta"><span class="research-category" data-i18n="research.agent">Agent</span><div class="research-cover research-cover-agent" aria-hidden="true"><strong>HomiAgent-0</strong></div></div>
+          <div class="research-body">
+            <h2><button type="button" class="research-open" data-detail="blog-homiagent-0" aria-haspopup="dialog"><span data-i18n="research.agent.title">HomiAgent-0: A Memory-Driven Agent for Lifelong Personalized Household Robots</span><svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></button></h2>
+            <p data-i18n="research.agent.summary">A memory-driven approach to lifelong personalization and self-improvement for household robots.</p>
+          </div>
+        </article>
         <article class="research-entry" data-research-category="harness">
           <div class="research-meta"><span class="research-category" data-i18n="research.harness">Harness</span><div class="research-cover research-cover-harness" aria-hidden="true"><strong>RoBIOS</strong></div></div>
           <div class="research-body">
@@ -70,6 +79,13 @@
           <div class="research-body">
             <h2><button type="button" class="research-open" data-detail="blog-homimemo" aria-haspopup="dialog"><span data-i18n="highlights.two.title">HomiMemo: A Memory for Lifelong Personalized Household Robots</span><svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></button></h2>
             <p data-i18n="highlights.two">How user profiles, world states, and robot experiences form a memory foundation for long-term personalized assistance.</p>
+          </div>
+        </article>
+        <article class="research-entry" data-research-category="eval">
+          <div class="research-meta"><span class="research-category" data-i18n="research.eval">Eval</span><div class="research-cover research-cover-eval" aria-hidden="true"><strong>Are You Ok?</strong></div></div>
+          <div class="research-body">
+            <h2><button type="button" class="research-open" data-detail="blog-are-you-ok" aria-haspopup="dialog"><span data-i18n="research.eval.title">Are You Ok? A revisiting Benchmark for LLM as Embodied Brains</span><svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></button></h2>
+            <p data-i18n="research.eval.summary">Revisiting how large language models are evaluated as embodied brains.</p>
           </div>
         </article>
       </div>
