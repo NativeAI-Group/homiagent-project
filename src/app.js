@@ -1,5 +1,16 @@
 const translations = {
   "nav.research": ["研究", "Research"],
+  "nav.people": ["团队", "People"],
+  "nav.join": ["加入我们", "Join Us"],
+  "people.metaTitle": ["团队 | BAAI_HomiAgent Group", "People | BAAI_HomiAgent Group"],
+  "people.description": ["BAAI_HomiAgent Group 团队成员。", "People at BAAI_HomiAgent Group."],
+  "people.groups.leadership": ["项目负责人", "Leadership"],
+  "people.groups.researchEngineering": ["研究与工程", "Research & Engineering"],
+  "people.groups.interns": ["实习成员", "Interns"],
+  "people.roles.leader": ["负责人", "Leader"],
+  "people.roles.coLeader": ["联合负责人", "Co-Leader"],
+  "people.roles.fullTime": ["全职成员", "Full-time Member"],
+  "people.roles.intern": ["实习成员", "Intern"],
   "prototype.description": [
     "面向真实家庭的具身智能技术原型。",
     "Our technical prototype for embodied AI in real homes."
@@ -34,8 +45,8 @@ const translations = {
     "View on GitHub"
   ],
   "hero.more": [
-    "探索 HomiAgent-0",
-    "Explore HomiAgent-0"
+    "探索研究",
+    "Explore research"
   ],
   "scene.title": [
     "A Robot Like Homi.",
@@ -220,30 +231,12 @@ const details = {
 };
 
 const articles = {
-  'blog-homiagent-0': {
-    category: 'TECH BLOG / AGENT',
-    title: translations['research.agent.title'],
-    subtitle: ['记忆驱动的家庭 Agent', 'Memory-driven household agents'],
-    description: translations['research.agent.summary'],
-    points: [],
-  },
   'blog-are-you-ok': {
     category: 'TECH BLOG / EVAL',
     title: translations['research.eval.title'],
     subtitle: ['重新审视具身评测', 'Revisiting embodied evaluation'],
     description: translations['research.eval.summary'],
     points: [],
-  },
-  'blog-robios': {
-    category: 'TECH BLOG / FRAMEWORK',
-    title: ['RoBIOS：插件式的具身原生Harness架构', 'RoBIOS: A Plugin-Based, Embodied-Native Harness Architecture'],
-    subtitle: ['感知、决策与执行如何形成闭环', 'Connecting perception, reasoning, and action'],
-    description: ['真实家庭的环境会在任务执行中不断变化。RoBIOS 的设计围绕实时反馈展开，让机器人根据环境变化调整后续决策与动作。', 'A home can change while a task is being carried out. RoBIOS is designed around real-time feedback, allowing subsequent decisions and actions to reflect those changes.'],
-    points: [
-      [['从环境反馈出发', 'Start with environmental feedback'], ['具身执行需要持续感知环境。一次动作完成后，新的观察进入下一轮决策，连接感知、决策与执行。', 'Embodied execution requires ongoing perception. Observations after an action inform the next decision, connecting perception, reasoning, and execution.']],
-      [['让内核聚焦执行', 'Keep the core focused on execution'], ['RoBIOS 采用稳定、极简的内核，聚焦实时闭环执行。核心职责保持清晰，为不同应用提供共同基础。', 'RoBIOS uses a stable, minimal core focused on real-time closed-loop execution. Clear core responsibilities provide a common foundation for different applications.']],
-      [['通过插件扩展应用', 'Extend applications through plugins'], ['不同机器人与家庭任务需要不同能力。插件架构让这些能力围绕内核扩展，为具身 Agent 的应用生态留出空间。', 'Different robots and household tasks need different capabilities. Plugins extend the core to support these needs and make room for an embodied Agent application ecosystem.']],
-    ],
   },
   'blog-homimemo': {
     category: 'TECH BLOG / MEMORY',
@@ -265,6 +258,17 @@ const menuButton = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
 const dialog = document.querySelector('#detail-dialog');
 const page = document.body.dataset.page || 'home';
+function updateNavigation() {
+  const section = page === 'prototype' ? 'research' : page;
+  document.querySelectorAll('[data-page-link]').forEach(link => {
+    const current = link.dataset.pageLink === section;
+    link.classList.toggle('active', current);
+    link.removeAttribute('aria-current');
+    if (current && page !== 'prototype') link.setAttribute('aria-current', 'page');
+  });
+}
+updateNavigation();
+
 const researchFilters = document.querySelector('.research-filters');
 const researchTabs = [...document.querySelectorAll('[data-research-filter]')];
 const researchEntries = [...document.querySelectorAll('[data-research-category]')];

@@ -249,7 +249,7 @@ html[lang=en] .belief-card h3{min-height:0}
 }
 /* Compact page introductions and a shared navigation keep the content in focus. */
 .desktop-nav a[aria-current=page]:after{width:100%}
-.mobile-nav a[aria-current=page]{color:var(--orange)}
+.mobile-nav a[aria-current],.mobile-nav a.active{color:var(--orange)}
 .scene-note{min-width:0;padding:13px 17px}
 .scene-note strong{font-size:14px}
 .beliefs{border-top:1px solid var(--line)}
@@ -266,7 +266,7 @@ html[lang=en] .belief-card h3{min-height:0}
 .exploration-copy .capability-subtitle{margin-bottom:0}
 .exploration-note{justify-content:flex-end;margin-top:25px;padding-top:19px}
 body[data-page=prototype] .site-footer{padding-top:38px}
-body[data-page=research] main{min-height:calc(100svh - 235px)}
+body[data-page=research] main,body[data-page=people] main{min-height:calc(100svh - 235px)}
 @media(max-width:700px){
   .scene-note strong{font-size:13px}
   .page-intro{padding-top:39px;padding-bottom:30px}
@@ -344,4 +344,51 @@ body[data-page=research] .page-intro h1{font-size:clamp(46px,5.3vw,72px)}
   .research-open{font-size:22px;line-height:1.5;letter-spacing:-.4px;gap:16px}
   .research-open>.icon{width:17px;height:17px;margin-top:7px}
   .research-body>p{font-size:13px;line-height:1.9;margin:12px 0 0}
+}
+
+/* Recruitment will get its own destination when the content is ready. */
+.nav-unavailable{background:transparent;padding:0;color:#98a18f;cursor:default}
+.desktop-nav .nav-unavailable{font-size:12px}
+.mobile-nav .nav-unavailable{display:block;width:100%;padding:14px 0;border-bottom:1px solid #e6eadd;text-align:left;font-size:13px}
+@media(min-width:701px) and (max-width:900px){.desktop-nav .nav-unavailable{font-size:10px}}
+
+/* Give the primary navigation more presence without increasing header height. */
+.desktop-nav{align-items:center;gap:32px}
+.desktop-nav>a,.desktop-nav>.nav-unavailable{display:inline-flex;align-items:center;min-height:44px;padding:10px 2px;font-size:16px;font-weight:500;line-height:1.5}
+.desktop-nav a:after{bottom:2px}
+.mobile-nav>a,.mobile-nav>.nav-unavailable{min-height:49px;padding-block:15px;font-size:16px;line-height:1.5}
+@media(min-width:701px) and (max-width:900px){
+  .desktop-nav{gap:22px}
+  .desktop-nav>a,.desktop-nav>.nav-unavailable{font-size:14px}
+}
+
+/* Member names and supplied roles stay visible while portraits are pending. */
+.people-intro .page-intro-heading{margin-bottom:12px}
+.people-intro h1{font-size:clamp(32px,4.5vw,64px);font-weight:650;line-height:1.2;letter-spacing:-1.8px}
+.people-page-label{font-size:24px;line-height:1.5;color:#64745b;margin:0}
+.people-directory{padding-bottom:36px}
+.people-group{padding-block:30px 40px;border-top:1px solid var(--line)}
+.people-group h2{font-family:var(--heading);font-size:25px;font-weight:550;line-height:1.5;letter-spacing:-.5px;margin:0 0 24px}
+.people-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;list-style:none;padding:0;margin:0}
+.person-card{min-width:0;padding:25px;background:#fbfcf7;border:1px solid #dfe5d6;border-radius:9px}
+.person-avatar{width:88px;height:88px;display:grid;place-items:center;background:#e9efdf;border-radius:50%;color:#819674;margin-bottom:22px}
+.person-avatar svg{display:block;width:54px;height:54px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.person-name{font-family:var(--heading);font-size:21px;font-weight:600;letter-spacing:-.5px;line-height:1.5;overflow-wrap:anywhere;margin:0 0 5px}
+.person-role{font-size:13px;line-height:1.7;color:#7b876e;margin:0}
+@media(min-width:701px) and (max-width:1100px){
+  .people-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .people-intro .page-intro-heading{margin-bottom:10px}
+  .people-intro h1{font-size:clamp(27px,7.3vw,40px);line-height:1.25;letter-spacing:-1px}
+  .people-page-label{font-size:19px}
+  .people-directory{padding-bottom:20px}
+  .people-group{padding-block:25px 31px}
+  .people-group h2{font-size:22px;margin-bottom:19px}
+  .people-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .person-card{padding:20px 14px}
+  .person-avatar{width:68px;height:68px;margin-bottom:16px}
+  .person-avatar svg{width:43px;height:43px}
+  .person-name{font-size:16px;letter-spacing:-.35px}
+  .person-role{font-size:12px}
 }

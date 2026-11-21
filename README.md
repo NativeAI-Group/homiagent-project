@@ -21,7 +21,8 @@ If you use nvm, run `nvm install` and `nvm use` from the repository root.
 ├── src/                  # Website source; copied to dist/ during builds
 │   ├── index.html        # Homepage: introduction, beliefs, and community
 │   ├── homiagent-0.html  # Prototype: architecture, modules, and capabilities
-│   ├── research.html     # Research: technical blog
+│   ├── research.html     # Research: categorized projects and technical blog
+│   ├── people.html       # People: leadership, full-time members, and interns
 │   ├── styles.css        # Responsive layout, colors, and motion
 │   ├── app.js            # Translations, navigation, and dialogs
 │   └── assets/           # SVG illustrations and favicon
@@ -77,7 +78,7 @@ The workflow reads its Node.js version from `.nvmrc`. It does not need third-par
 
 The default language is English; the initial HTML is also in English. Chinese/English preference is saved locally when browser storage is available. Both languages include page metadata, illustration descriptions, and process captions.
 
-The homepage contains the project introduction, the existing “What we believe” section, and a community invitation. No new vision section is included. The main navigation links to HomiAgent-0 (the current technical prototype, with separate sections for project architecture, core modules, and core capabilities) and Research (the technical blog, with All, Agent, Harness, Memory, and Eval category tabs). Each page has its own bilingual metadata; language preference is shared across pages. All three HTML pages work without client-side routing and retain readable content without JavaScript.
+The homepage contains the project introduction, the existing “What we believe” section, and a community invitation. No new vision section is included. The main navigation contains Research, People, and Join Us. Research uses All, Agent, Harness, Memory, and Eval category tabs; its HomiAgent-0 entry opens the local prototype page, and its RoBIOS entry opens https://nativeai-group.github.io/robios-project/?lang=en. The prototype page keeps separate sections for project architecture, core modules, and core capabilities. People groups the team into Leadership, Research & Engineering, and Interns, with person-icon placeholders until portraits are available. Join Us is reserved for recruitment and remains disabled until recruitment information is ready. Each page has its own bilingual metadata; language preference is shared across pages. All four HTML pages work without client-side routing and retain readable content without JavaScript.
 
 Illustrations are local SVG files. Google Fonts are optional, with system-font fallbacks. The architecture diagram shows RoBIOS coordinating HomiBrain, HomiMemo, and robot execution, with labeled information flows and a feedback return path. The core capabilities section uses a pale sage palette with small orange accents. The four capability directions are Generalization, Teachability, Self-Evolution, and Proactivity. Their diagrams distinguish adaptation across settings, learning through human demonstration and correction, improvement through experience, and context-and-memory-based decisions. These remain directions to explore and validate with the community.
 
