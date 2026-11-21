@@ -364,7 +364,8 @@ body[data-page=research] .page-intro h1{font-size:clamp(46px,5.3vw,72px)}
 
 /* Member names and supplied roles stay visible while portraits are pending. */
 .people-intro .page-intro-heading{margin-bottom:12px}
-.people-intro h1{font-size:clamp(32px,4.5vw,64px);font-weight:650;line-height:1.2;letter-spacing:-1.8px}
+.people-affiliation{font-size:13px;font-weight:600;line-height:1.5;letter-spacing:2px;color:#7a8b6c;margin:0 0 14px}
+.people-intro h1{font-size:clamp(32px,4.2vw,60px);font-weight:550;line-height:1.2;letter-spacing:-1.5px}
 .people-page-label{font-size:24px;line-height:1.5;color:#64745b;margin:0}
 .people-directory{padding-bottom:36px}
 .people-group{padding-block:30px 40px;border-top:1px solid var(--line)}
@@ -380,6 +381,7 @@ body[data-page=research] .page-intro h1{font-size:clamp(46px,5.3vw,72px)}
 }
 @media(max-width:700px){
   .people-intro .page-intro-heading{margin-bottom:10px}
+  .people-affiliation{font-size:11px;letter-spacing:1.8px;margin-bottom:11px}
   .people-intro h1{font-size:clamp(27px,7.3vw,40px);line-height:1.25;letter-spacing:-1px}
   .people-page-label{font-size:19px}
   .people-directory{padding-bottom:20px}
